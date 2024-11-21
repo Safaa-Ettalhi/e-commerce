@@ -50,3 +50,6 @@ html { font-size: 14px; }
 @media (max-width: 430px) {
     .menu { width: 90%; }
 }
+.primary-btn-large {
+    @apply bg-black text-white px-6 py-1 rounded-full my-4 hover:bg-black/70 transition-all delay-150 ease-in-out;
+}
