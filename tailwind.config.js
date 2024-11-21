@@ -12,6 +12,13 @@ module.exports = {
         mediumGray: "#e5e7eb",
         // n9edou manhtajouhch ga3, lmohim kayn hh
         darkGray: "#d1d5db",
+      },
+      
+      fontFamily: {
+        // font d site kaml
+        FunnelDisplay: ["funnel display", "sans"],
+        // font li ghaykon f l3anawin lkbar
+        GaMaamli: ["ga maamli", "sans"],
       }
     },
   },
