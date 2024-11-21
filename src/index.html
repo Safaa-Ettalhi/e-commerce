@@ -6,10 +6,52 @@
     <title>E-COMMERCE</title>
     <link rel="stylesheet" href="assets/css/output.css">
     <link rel="stylesheet" href="assets/css/input.css">
+
+    <script src="assets/js/app.js" defer></script>
+    
 </head>
 <body>
     <!-- navbar -->
+    <nav class="center sticky top-0 shadow-md">
+        <div class="container flex items-center justify-between">
+            <a href="#">
+                <img src="assets/images/nike-logo.svg" class="size-10">
+            </a>
+            
+            <ul class="menu" id="menu">
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#">NEW</a>
+                </li>
+                <li>
+                    <a href="#">MEN</a>
+                </li>
+                <li>
+                    <a href="#">WOMEN</a>
+                </li>
+                <li>
+                    <a href="#">CONTACT</a>
+                </li>
+            </ul>
 
+            <ul class="flex justify-between gap-4 items-center">
+                <a class="relative" href="#">
+                    <img class="size-5" src="assets/images/icons/heart.svg">
+                    <span class="absolute bg-pink-400 -top-1 left-4 text-white text-xs rounded-full size-4 center">0</span>
+                </a>
+                <a class="relative" href="#">
+                    <img class="size-5" src="assets/images/icons/bag.svg">
+                    <span class="absolute bg-pink-400 -top-1 left-4 text-white text-xs rounded-full size-4 center">0</span>
+                </a>
+                <a href="#">
+                    <img class="size-5" src="assets/images/icons/user.svg">
+                </a>
+                <img class="size-5 hidden max-md:block z-[2] cursor-pointer" src="assets/images/icons/menu.svg" id="menu-icon">
+            </ul>
+        </div>
+    </nav>
 
 
     <!-- sections ..... -->
