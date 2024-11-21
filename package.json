@@ -1,0 +1,15 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "- **Navbar**: Create a responsive navbar (logo + (Home, New, Men, Women, contact) ).\r - **Footer**:  Create a simple responsive footer.\r - **Home page**: \r     - Ads section for Men cloths.\r     - Ads section for Women cloths.\r     - Section about new arrivals (image, text, button).\r     - Carousel Products in all categories (men, women, shoes...)\r - **New page**:\r     - Products list with filter system and sorting function by Price.\r - **Men page**:\r     - two images about men cloths\r     - products with filter system (sorting optional).\r - **Women page**: \r     -Same as men page.\r - **Contact page**: Normal contcat responsive design.",
+  "main": "app.js",
+  "scripts": {
+    "app": "npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
+  }
+}
