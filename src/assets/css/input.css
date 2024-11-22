@@ -10,8 +10,49 @@
 .center { @apply flex justify-center items-center; }
 .check { border: 1px solid red; }
 
-html { font-size: 16px; }
+html { font-size: 14px; scroll-behavior: smooth; }
 .container { width: 90%; }
 @media (max-width: 1280px) { .container { width: 95%; } }
 @media (max-width: 1024px) { .container { width: 100%; padding: 1rem; } }
 @media (max-width: 640px) { html { font-size: 12px; } .container { padding: .5rem; } }
+
+/* style of menu and its responsivness */
+.menu {
+    display: flex;
+    gap: 1rem;
+    font-size: .8rem;
+    transition: right .5s ease-in-out;
+    li a {
+        transition: color .2s ease-in-out;
+    }
+    li a:hover {
+        @apply text-black/70;
+    }
+}
+.menu.active {
+    right: 0;
+}
+@media (max-width: 768px) {
+    .menu {
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        right: -100%;
+        background: rgb(255, 255, 255);
+        height: 100vh;
+        justify-content: flex-start;
+        width: 80%;
+        z-index: 1;
+        padding: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+}
+@media (max-width: 430px) {
+    .menu { width: 90%; }
+}
+.primary-btn-large {
+    @apply bg-black text-white px-6 py-1 rounded-full my-4 hover:bg-black/70 transition-all delay-150 ease-in-out;
+}
+.primary-btn-large-white {
+    @apply bg-white text-black px-6 py-1 rounded-full my-4 hover:bg-white/70 transition-all delay-150 ease-in-out;
+}

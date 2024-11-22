@@ -6,16 +6,150 @@
     <title>E-COMMERCE</title>
     <link rel="stylesheet" href="assets/css/output.css">
     <link rel="stylesheet" href="assets/css/input.css">
+
+    <script src="assets/js/app.js" defer></script>
+    <!-- scrollreveal will be used in animation -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
 </head>
 <body>
     <!-- navbar -->
+    <nav class="center bg-white sticky top-0 shadow-md z-10">
+        <div class="container flex items-center justify-between">
+            <a href="#">
+                <img src="assets/images/nike-logo.svg" class="size-10">
+            </a>
+            
+            <ul class="menu" id="menu">
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#">NEW</a>
+                </li>
+                <li>
+                    <a href="#">MEN</a>
+                </li>
+                <li>
+                    <a href="#">WOMEN</a>
+                </li>
+                <li>
+                    <a href="#">CONTACT</a>
+                </li>
+            </ul>
 
+            <ul class="flex justify-between gap-4 items-center">
+                <a class="relative" href="#">
+                    <img class="size-5" src="assets/images/icons/heart.svg">
+                    <span class="absolute bg-pink-400 -top-1 left-4 text-white text-xs rounded-full size-4 center">0</span>
+                </a>
+                <a class="relative" href="#">
+                    <img class="size-5" src="assets/images/icons/bag.svg">
+                    <span class="absolute bg-pink-400 -top-1 left-4 text-white text-xs rounded-full size-4 center">0</span>
+                </a>
+                <a href="#">
+                    <img class="size-5" src="assets/images/icons/user.svg">
+                </a>
+                <img class="size-5 hidden max-md:block z-[2] cursor-pointer" src="assets/images/icons/menu.svg" id="menu-icon">
+            </ul>
+        </div>
+    </nav>
 
 
     <!-- sections ..... -->
+    <header class="center hero-section">
+        <img src="assets/images/thumbnails/thumbnail-large.jpg" class="max-sm:hidden">
+        <img src="assets/images/thumbnails/thumbnail-medium.jpg" class="max-sm:block hidden h-auto object-cover w-full object-top">
+    </header>
 
+    <div class="bg-black h-10 my-4 hero-section"></div>
 
+    <!-- new arrivals -->
+    <section class="center flex-col gap-2 mt-36 arrivals-section">
+        <h1 class="font-GaMaamli text-4xl text-content">LATEST DROP</h1>
+        <p class="text-sm text-content">Featuring Air Jordan 3 'Black Cement' 1 more.</p>
+        <button class="primary-btn-large text-content">See New Arrivals</button>
+        <img src="assets/images/thumbnails/arrivals.jpg" class="main-image" alt="">
+    </section>
 
+    <div class="bg-white h-10"></div>
+
+    <!-- categories in good style -->
+    <section class="center flex-col gap-2 mt-32 categories-section">
+        <h1 class="font-GaMaamli text-4xl">KICKS BORN <br> TO PERFORM</h1>
+        <p class="text-center">For athletes pushing boundaries, every step, every move.</p>
+        <button class="primary-btn-large">SHOP NOW</button>
+        <div class="grid grid-cols-2 max-sm:grid-cols-1 -z-1">
+            <!-- TODO: make images in a div and add some information to each image and a button for shopping -->
+            <div class="relative">
+                <img src="assets/images/categories/men-shot.jpg" alt="">
+                <div class="absolute text-white bottom-0 left-0 right-0 p-6 bg-gradient-to-b from-transparent to-black">
+                    <p class="text-sm">Run in the Dark</p>
+                    <p class="font-bold">Nike Peagasus 42PRM</p>
+                    <button class="primary-btn-large-white">Shop</button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="assets/images/categories/women-men-shot.jpg" alt="">
+                <div class="absolute text-white bottom-0 left-0 right-0 p-6 bg-gradient-to-b from-transparent to-black">
+                    <p class="text-sm">Win for the City</p>
+                    <p class="font-bold">NBA City Edition</p>
+                    <button class="primary-btn-large-white">Shop</button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="assets/images/categories/women-shot.jpg" alt="">
+                <div class="absolute text-white bottom-0 left-0 right-0 p-6 bg-gradient-to-b from-transparent to-black">
+                    <p class="text-sm">Hold Court</p>
+                    <p class="font-bold">Jordan Heir Series</p>
+                    <button class="primary-btn-large-white">Shop</button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="assets/images/categories/shoes-shot.jpg" alt="">
+                <div class="absolute text-white bottom-0 left-0 right-0 p-6 bg-gradient-to-b from-transparent to-black">
+                    <p class="text-sm">Disrupctive by Design</p>
+                    <p class="font-bold">Nike Shox TL</p>
+                    <button class="primary-btn-large-white">Shop</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-white h-10"></div>
+
+    <section class="center flex-col gap-4 my-20 shoes-section">
+        <h1 class="font-GaMaamli text-4xl text-left w-full p-4">SHOP SHOES</h1>
+        <div class="flex gap-4 h-[300px] max-sm:h-[230px] relative overflow-hidden">
+            <div class="absolute left-8 max-sm:left-4 top-[50%] translate-x-[-50%] translate-y-[-50%]">
+                <img src="assets/images/icons/chevron-left.svg" class="size-6 max-sm:size-8 cursor-pointer bg-white rounded-full" alt="">
+            </div>
+            <div class="absolute right-5 max-sm:-right-1 top-[50%] translate-x-[-50%] translate-y-[-50%]">
+                <img src="assets/images/icons/chevron-right.svg" class="size-6 max-sm:size-8 cursor-pointer bg-white rounded-full" alt="">
+            </div>
+            <img src="assets/images/shoes/air-force.jpg" class="h-full" alt="">
+            <img src="assets/images/shoes/air-jordan.jpg" class="h-full" alt="">
+            <img src="assets/images/shoes/air-max.jpg" class="h-full" alt="">
+            <img src="assets/images/shoes/blazer.jpg" class="h-full" alt="">
+            <img src="assets/images/shoes/cortez.jpg" class="h-full" alt="">
+            <img src="assets/images/shoes/dunk.jpg" class="h-full" alt="">
+            <img src="assets/images/shoes/vomero.jpg" class="h-full" alt="">
+        </div>
+    </section>
+
+    
     <!-- footer -->
+    <footer class="center flex-col gap-2">
+        <div class="center flex-col py-6">
+            <img src="assets/images/nike-logo.svg" class="size-10" alt="">
+            <ul class="flex gap-4">
+                <li>Find a Store</li>
+                <li>Help</li>
+                <li>Join Us</li>
+                <li>Sign In</li>
+            </ul>
+        </div>
+        <p class="py-3 border-t w-full text-center">© 2024 Nike, Inc. All Rights Reserved</p>
+    </footer>
 </body>
 </html>
