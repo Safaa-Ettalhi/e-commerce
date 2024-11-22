@@ -53,3 +53,6 @@ html { font-size: 14px; }
 .primary-btn-large {
     @apply bg-black text-white px-6 py-1 rounded-full my-4 hover:bg-black/70 transition-all delay-150 ease-in-out;
 }
+.primary-btn-large-white {
+    @apply text-black bg-white px-6 py-1 rounded-full my-4 hover:bg-white/70 transition-all delay-150 ease-in-out;
+}
