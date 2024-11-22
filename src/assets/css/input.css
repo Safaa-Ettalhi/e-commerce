@@ -10,7 +10,7 @@
 .center { @apply flex justify-center items-center; }
 .check { border: 1px solid red; }
 
-html { font-size: 14px; }
+html { font-size: 14px; scroll-behavior: smooth; }
 .container { width: 90%; }
 @media (max-width: 1280px) { .container { width: 95%; } }
 @media (max-width: 1024px) { .container { width: 100%; padding: 1rem; } }
