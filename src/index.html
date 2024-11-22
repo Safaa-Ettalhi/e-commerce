@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/input.css">
 
     <script src="assets/js/app.js" defer></script>
+    <!-- scrollreveal will be used in animation -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     
 </head>
 <body>
@@ -55,25 +57,25 @@
 
 
     <!-- sections ..... -->
-    <header class="center">
+    <header class="center hero-section">
         <img src="assets/images/thumbnails/thumbnail-large.jpg" class="max-sm:hidden">
         <img src="assets/images/thumbnails/thumbnail-medium.jpg" class="max-sm:block hidden h-auto object-cover w-full object-top">
     </header>
 
-    <div class="bg-black h-10 my-4"></div>
+    <div class="bg-black h-10 my-4 hero-section"></div>
 
     <!-- new arrivals -->
-    <section class="center flex-col gap-2">
-        <h1 class="font-GaMaamli text-4xl">LATEST DROP</h1>
-        <p class="text-sm">Featuring Air Jordan 3 'Black Cement' 1 more.</p>
-        <button class="primary-btn-large">See New Arrivals</button>
-        <img src="assets/images/thumbnails/arrivals.jpg" alt="">
+    <section class="center flex-col gap-2 mt-36 arrivals-section">
+        <h1 class="font-GaMaamli text-4xl text-content">LATEST DROP</h1>
+        <p class="text-sm text-content">Featuring Air Jordan 3 'Black Cement' 1 more.</p>
+        <button class="primary-btn-large text-content">See New Arrivals</button>
+        <img src="assets/images/thumbnails/arrivals.jpg" class="main-image" alt="">
     </section>
 
     <div class="bg-white h-10"></div>
 
     <!-- categories in good style -->
-    <section class="center flex-col gap-2">
+    <section class="center flex-col gap-2 mt-32 categories-section">
         <h1 class="font-GaMaamli text-4xl">KICKS BORN <br> TO PERFORM</h1>
         <p class="text-center">For athletes pushing boundaries, every step, every move.</p>
         <button class="primary-btn-large">SHOP NOW</button>
@@ -114,9 +116,30 @@
         </div>
     </section>
 
+    <div class="bg-white h-10"></div>
+
+    <section class="center flex-col gap-4 my-20 shoes-section">
+        <h1 class="font-GaMaamli text-4xl text-left w-full p-4">SHOP SHOES</h1>
+        <div class="flex gap-4 h-[300px] max-sm:h-[230px] relative overflow-hidden">
+            <div class="absolute left-8 max-sm:left-4 top-[50%] translate-x-[-50%] translate-y-[-50%]">
+                <img src="assets/images/icons/chevron-left.svg" class="size-6 max-sm:size-8 cursor-pointer bg-white rounded-full" alt="">
+            </div>
+            <div class="absolute right-5 max-sm:-right-1 top-[50%] translate-x-[-50%] translate-y-[-50%]">
+                <img src="assets/images/icons/chevron-right.svg" class="size-6 max-sm:size-8 cursor-pointer bg-white rounded-full" alt="">
+            </div>
+            <img src="assets/images/shoes/air-force.jpg" class="h-full" alt="">
+            <img src="assets/images/shoes/air-jordan.jpg" class="h-full" alt="">
+            <img src="assets/images/shoes/air-max.jpg" class="h-full" alt="">
+            <img src="assets/images/shoes/blazer.jpg" class="h-full" alt="">
+            <img src="assets/images/shoes/cortez.jpg" class="h-full" alt="">
+            <img src="assets/images/shoes/dunk.jpg" class="h-full" alt="">
+            <img src="assets/images/shoes/vomero.jpg" class="h-full" alt="">
+        </div>
+    </section>
+
     
     <!-- footer -->
-    <footer class="center flex-col border gap-2">
+    <footer class="center flex-col gap-2">
         <div class="center flex-col py-6">
             <img src="assets/images/nike-logo.svg" class="size-10" alt="">
             <ul class="flex gap-4">
