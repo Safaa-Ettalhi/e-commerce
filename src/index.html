@@ -118,15 +118,17 @@
 
     <div class="bg-white h-10"></div>
 
-    <section class="center flex-col gap-4 my-20 shoes-section">
+    <section class="center flex-col gap-4 my-20 w-full overflow-hidden relative shoes-section">
         <h1 class="font-GaMaamli text-4xl text-left w-full p-4">SHOP SHOES</h1>
-        <div class="flex gap-4 h-[300px] max-sm:h-[230px] relative overflow-hidden">
-            <div class="absolute left-8 max-sm:left-4 top-[50%] translate-x-[-50%] translate-y-[-50%]">
-                <img src="assets/images/icons/chevron-left.svg" class="size-6 max-sm:size-8 cursor-pointer bg-white rounded-full" alt="">
-            </div>
-            <div class="absolute right-5 max-sm:-right-1 top-[50%] translate-x-[-50%] translate-y-[-50%]">
-                <img src="assets/images/icons/chevron-right.svg" class="size-6 max-sm:size-8 cursor-pointer bg-white rounded-full" alt="">
-            </div>
+
+        <div id="left" class="absolute left-2 max-sm:left-0 arrows top-[220px] max-sm:top-[170px]">
+            <img src="assets/images/icons/chevron-left.svg" class="size-6 max-sm:size-8 cursor-pointer bg-white rounded-full" alt="">
+        </div>
+        <div id="right" class="absolute right-2 max-sm:-right-0 arrows top-[220px] max-sm:top-[170px]">
+            <img src="assets/images/icons/chevron-right.svg" class="size-6 max-sm:size-8 cursor-pointer bg-white rounded-full" alt="">
+        </div>
+
+        <div id="slider" class="flex gap-4 h-[300px] max-sm:h-[230px] overflow-hidden scroll-smooth transition-all delay-75 ease-in-out">
             <img src="assets/images/shoes/air-force.jpg" class="h-full" alt="">
             <img src="assets/images/shoes/air-jordan.jpg" class="h-full" alt="">
             <img src="assets/images/shoes/air-max.jpg" class="h-full" alt="">
