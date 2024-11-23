@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Men's - Nike</title>
+    <link rel="stylesheet" href="../assets/css/output.css">
+    <link rel="stylesheet" href="../assets/css/input.css">
+
+    <script src="../assets/js/globalScript.js" defer></script>
+    <script src="../assets/js/app.js" defer></script>
+    <!-- scrollreveal will be used in animation -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="center bg-white sticky top-0 shadow-md z-10">
+      <div class="container flex items-center justify-between">
+        <a href="../index.html">
+          <img src="../assets/images/nike-logo.svg" class="size-10" />
+        </a>
+
+        <ul class="menu" id="menu">
+          <li>
+            <a href="../index.html">HOME</a>
+          </li>
+          <li>
+            <a href="#">NEW</a>
+          </li>
+          <li>
+            <a href="men.html">MEN</a>
+          </li>
+          <li>
+            <a href="women.html">WOMEN</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+
+        <ul class="flex justify-between gap-4 items-center">
+          <a class="relative" href="#">
+            <img class="size-5" src="../assets/images/icons/heart.svg" />
+            <span
+              class="absolute bg-pink-400 -top-1 left-4 text-white text-xs rounded-full size-4 center"
+              >0</span
+            >
+          </a>
+          <a class="relative" href="#">
+            <img class="size-5" src="../assets/images/icons/bag.svg" />
+            <span
+              class="absolute bg-pink-400 -top-1 left-4 text-white text-xs rounded-full size-4 center"
+              >0</span
+            >
+          </a>
+          <a href="#">
+            <img class="size-5" src="../assets/images/icons/user.svg" />
+          </a>
+          <img
+            class="size-5 hidden max-md:block z-[2] cursor-pointer"
+            src="../assets/images/icons/menu.svg"
+            id="menu-icon"
+          />
+        </ul>
+      </div>
+    </nav>
+
+    <div class="bg-lightGray h-14 max-sm:h-8"></div>
+
+    <header class="center flex-col my-4">
+        <h6 class="text-sm">Nike Pegasus 42 PRM</h6>
+        <h1 class="text-4xl font-GaMaamli">RUN IN THE DARK</h1>
+        <p class="text-xs">A reflective and responsive shoe for running in low visivility.</p>
+        <button class="primary-btn-large">Shop</button>
+        <img src="../assets/images/men's/thumbnail-large.jpg" class="max-sm:hidden">
+        <img src="../assets/images/men's/thumbnail-small.jpg" class="max-sm:block hidden h-auto object-cover w-full object-top">
+    </header>
+
+    <section class="center flex-col my-8">
+        <h1 class="font-GaMaamli text-4xl text-left w-full p-4">Trending</h1>
+        <div class="grid grid-cols-2 max-sm:grid-cols-1 -z-1">
+            <!-- TODO: make images in a div and add some information to each image and a button for shopping -->
+            <div class="relative">
+                <img src="../assets/images/men's/categories/img-one.jpg" alt="">
+                <div class="absolute text-white bottom-0 left-0 right-0 p-6 bg-gradient-to-b from-transparent to-black">
+                    <p class="text-sm">Give sport</p>
+                    <p class="font-bold">Sport Meets Style</p>
+                    <button class="primary-btn-large-white">Shop</button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="../assets/images/men's/categories/img-two.jpg" alt="">
+                <div class="absolute text-white bottom-0 left-0 right-0 p-6 bg-gradient-to-b from-transparent to-black">
+                    <p class="text-sm">Just in</p>
+                    <p class="font-bold">Nothing Beats the C1TY</p>
+                    <button class="primary-btn-large-white">Shop</button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="../assets/images/men's/categories/img-three.jpg" alt="">
+                <div class="absolute text-white bottom-0 left-0 right-0 p-6 bg-gradient-to-b from-transparent to-black">
+                    <p class="text-sm">Ja 2</p>
+                    <p class="font-bold">I Get Up</p>
+                    <button class="primary-btn-large-white">Shop</button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="../assets/images/men's/categories/img-four.jpg" alt="">
+                <div class="absolute text-white bottom-0 left-0 right-0 p-6 bg-gradient-to-b from-transparent to-black">
+                    <p class="text-sm">Season Essentials</p>
+                    <p class="font-bold">Nike Tech & More</p>
+                    <button class="primary-btn-large-white">Shop</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="center my-8 flex-col">
+        <h1 class="text-4xl font-GaMaamli">MAD VOLTAGE</h1>
+        <p class="text-xs">Light up the pitcthis season with the best boots for Speed, Precision and Touch.</p>
+        <button class="primary-btn-large">Shop</button>
+        <img src="../assets/images/men's/foot-shoes.jpg" alt="">
+    </section>
+
+    <div class="center flex-col my-4 p-12 max-md:p-4 gap-6">
+        <h1 class="text-4xl font-GaMaamli w-full">Shop the Essentiels</h1>
+        <div class="flex gap-4 w-full">
+            <div class="flex flex-col gap-2 cursor-pointer">
+                <img src="../assets/images/men's/categories/men-s-shoes.jpg" class="" alt="">
+                <p class="text-xl">Shoes</p>
+            </div>
+            <div class="flex flex-col gap-2 cursor-pointer">
+                <img src="../assets/images/men's/categories/men-s-accessoirs.jpg" class="" alt="">
+                <p class="text-xl">Accessoirs</p>
+            </div>
+            <div class="flex flex-col gap-2 cursor-pointer">
+                <img src="../assets/images/men's/categories/men-s-cloths.jpg" class="" alt="">
+                <p class="text-xl">Cloths</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="center flex-col gap-4 my-20 w-full overflow-hidden relative">
+        <h1 class="font-GaMaamli text-4xl text-left w-full p-4">SHOP SHOES</h1>
+
+        <div id="left" class="absolute left-2 max-sm:left-0 arrows top-[220px] max-sm:top-[170px]">
+            <img src="../assets/images/icons/chevron-left.svg" class="size-6 max-sm:size-8 cursor-pointer bg-white rounded-full" alt="">
+        </div>
+        <div id="right" class="absolute right-2 max-sm:-right-0 arrows top-[220px] max-sm:top-[170px]">
+            <img src="../assets/images/icons/chevron-right.svg" class="size-6 max-sm:size-8 cursor-pointer bg-white rounded-full" alt="">
+        </div>
+
+        <div id="slider" class="flex gap-4 h-[300px] max-sm:h-[230px] overflow-hidden scroll-smooth transition-all delay-75 ease-in-out">
+            <img src="../assets/images/shoes/air-force.jpg" class="h-full" alt="">
+            <img src="../assets/images/shoes/air-jordan.jpg" class="h-full" alt="">
+            <img src="../assets/images/shoes/air-max.jpg" class="h-full" alt="">
+            <img src="../assets/images/shoes/blazer.jpg" class="h-full" alt="">
+            <img src="../assets/images/shoes/cortez.jpg" class="h-full" alt="">
+            <img src="../assets/images/shoes/dunk.jpg" class="h-full" alt="">
+            <img src="../assets/images/shoes/vomero.jpg" class="h-full" alt="">
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="center flex-col gap-2">
+        <div class="center flex-col py-6">
+            <img src="../assets/images/nike-logo.svg" class="size-10" alt="">
+            <ul class="flex gap-4">
+                <li>Find a Store</li>
+                <li>Help</li>
+                <li>Join Us</li>
+                <li>Sign In</li>
+            </ul>
+        </div>
+        <p class="py-3 border-t w-full text-center">© 2024 Nike, Inc. All Rights Reserved</p>
+    </footer>
+
+  </body>
+</html>
