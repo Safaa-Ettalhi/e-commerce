@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New releases - Nike</title>
+    <link rel="stylesheet" href="../assets/css/output.css" />
+    <link rel="stylesheet" href="../assets/css/input.css" />
+
+    <script src="../assets/js/globalScript.js" defer></script>
+    <script src="../assets/js/filter.js" defer></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="center bg-white sticky top-0 shadow-md z-10">
+      <div class="container flex items-center justify-between">
+        <a href="../index.html">
+          <img src="../assets/images/nike-logo.svg" class="size-10" />
+        </a>
+
+        <ul class="menu" id="menu">
+          <li>
+            <a href="../index.html">HOME</a>
+          </li>
+          <li>
+            <a href="#">NEW</a>
+          </li>
+          <li>
+            <a href="men.html">MEN</a>
+          </li>
+          <li>
+            <a href="women.html">WOMEN</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+
+        <ul class="flex justify-between gap-4 items-center">
+          <a class="relative" href="#">
+            <img class="size-5" src="../assets/images/icons/heart.svg" />
+            <span
+              class="absolute bg-pink-400 -top-1 left-4 text-white text-xs rounded-full size-4 center"
+              >0</span
+            >
+          </a>
+          <a class="relative" href="#">
+            <img class="size-5" src="../assets/images/icons/bag.svg" />
+            <span
+              class="absolute bg-pink-400 -top-1 left-4 text-white text-xs rounded-full size-4 center"
+              >0</span
+            >
+          </a>
+          <a href="#">
+            <img class="size-5" src="../assets/images/icons/user.svg" />
+          </a>
+          <img
+            class="size-5 hidden max-md:block z-[2] cursor-pointer"
+            src="../assets/images/icons/menu.svg"
+            id="menu-icon"
+          />
+        </ul>
+      </div>
+    </nav>
+
+    <div class="center bg-black h-8">
+      <p class="text-white">Dscount Up to 23%</p>
+    </div>
+
+    <section class="center justify-between w-full bg-lightGray py-2 sticky top-10 max-sm:top-12 z-10">
+      <div class="container flex">
+        <h1 class="text-xl w-full">( 21 ) Items</h1>
+        <div class="flex gap-4">
+          <span id="filter-btn" class="cursor-pointer">filter</span>
+          <span id="sort-btn" class="cursor-pointer">sort</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="flex transition-all delay-150 ease-in-out">
+      <aside id="filter-area" class="border w-1/5 max-md:hidden"></aside>
+      <aside id="products-area" class="border w-4/5 max-md:w-full grid max-xl:grid-cols-4 max-md:grid-cols-4 max-sm:grid-cols-2 max-[425px]:grid-cols-1 grid-cols-5 gap-4 p-4">
+        <div class="check h-[400px]"></div>
+        <div class="check h-[400px]"></div>
+        <div class="check h-[400px]"></div>
+        <div class="check h-[400px]"></div>
+        <div class="check h-[400px]"></div>
+      </aside>
+    </div>
+
+    <!-- footer -->
+    <footer class="center flex-col gap-2">
+      <div class="center flex-col py-6">
+        <img src="../assets/images/nike-logo.svg" class="size-10" alt="" />
+        <ul class="flex gap-4">
+          <li>Find a Store</li>
+          <li>Help</li>
+          <li>Join Us</li>
+          <li>Sign In</li>
+        </ul>
+      </div>
+      <p class="py-3 border-t w-full text-center">
+        © 2024 Nike, Inc. All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>

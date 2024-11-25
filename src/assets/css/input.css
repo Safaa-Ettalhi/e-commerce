@@ -57,3 +57,6 @@ html { font-size: 14px; scroll-behavior: smooth; }
 .primary-btn-large-white {
     @apply bg-white text-black text-base max-sm:text-sm px-6 py-1 rounded-full my-4 hover:bg-white/70 transition-all delay-150 ease-in-out;
 }
+.women-shoes::-webkit-scrollbar {
+    display: none;
+}
